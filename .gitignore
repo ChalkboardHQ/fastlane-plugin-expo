@@ -5,6 +5,10 @@
 /_yardoc/
 /doc/
 /rdoc/
+/coverage/
+/pkg/
+/spec/reports/
+/tmp/
 fastlane/README.md
 fastlane/report.xml
 coverage
