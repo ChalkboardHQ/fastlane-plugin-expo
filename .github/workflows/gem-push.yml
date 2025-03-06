@@ -27,7 +27,7 @@ jobs:
         run: bundle install
 
       - name: Run tests
-        run: bundle exec rake spec
+        run: bundle exec rake
 
       - name: Publish to RubyGems
         run: |
