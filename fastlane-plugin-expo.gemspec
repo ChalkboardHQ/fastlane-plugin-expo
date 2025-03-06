@@ -11,7 +11,6 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Fastlane plugin for Expo'
   spec.homepage      = 'https://github.com/ChalkboardHQ/fastlane-plugin-expo'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
