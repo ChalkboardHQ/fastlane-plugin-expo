@@ -22,18 +22,17 @@ jobs:
         with:
           ruby-version: 2.7.6
           bundler-cache: true
-      - uses: fac/ruby-gem-setup-credentials-action@v2
-        with:
-          token: ${{ secrets.RUBYGEMS_AUTH_TOKEN }}
 
       - name: Run tests
         run: bundle exec rake
 
-      - name: Build
-        run: bundle exec rake build
-
       - name: Publish to RubyGems
-        if: github.ref == 'refs/heads/main'
-        uses: fac/ruby-gem-push-action@v2
-        with:
-          key: github
+        run: |
+          mkdir -p $HOME/.gem
+          touch $HOME/.gem/credentials
+          chmod 0600 $HOME/.gem/credentials
+          printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+          bundle exec rake build
+          gem push ./pkg/*.gem
+        env:
+          GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
