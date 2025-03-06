@@ -1,3 +1,5 @@
-require "mkmf"
+# frozen_string_literal: true
 
-create_makefile("fastlane_plugin_expo/fastlane_plugin_expo")
+require 'mkmf'
+
+create_makefile('fastlane_plugin_expo/fastlane_plugin_expo')
