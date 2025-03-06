@@ -30,7 +30,7 @@ jobs:
         run: bundle exec rake
 
       - name: Build
-        run: gem build *.gemspec
+        run: bundle exec rake build
 
       - name: Publish to RubyGems
         if: github.ref == 'refs/heads/main'
