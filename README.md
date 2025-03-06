@@ -1,3 +1,7 @@
+[![forthebadge](https://forthebadge.com/images/featured/featured-powered-by-electricity.svg)]()
+[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)]()
+[![forthebadge](https://forthebadge.com/images/badges/contains-17-coffee-cups.svg)]()
+
 # FastlanePluginExpo
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fastlane_plugin_expo`. To experiment with that code, run `bin/console` for an interactive prompt.
