@@ -26,4 +26,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.extensions    = ["ext/fastlane_plugin_expo/extconf.rb"]
+
+  spec.add_runtime_dependency 'fastlane'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'webmock'
 end
