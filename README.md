@@ -1,6 +1,6 @@
-[![forthebadge](https://forthebadge.com/images/featured/featured-powered-by-electricity.svg)]()
 [![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)]()
 [![forthebadge](https://forthebadge.com/images/badges/contains-17-coffee-cups.svg)]()
+[![forthebadge](https://forthebadge.com/images/featured/featured-powered-by-electricity.svg)]()
 
 # FastlanePluginExpo
 
