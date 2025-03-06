@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
   spec.extensions    = ['ext/fastlane_plugin_expo/extconf.rb']
 
-  spec.add_runtime_dependency 'fastlane'
+  spec.add_runtime_dependency 'fastlane', '>= 2.200.0'
 end

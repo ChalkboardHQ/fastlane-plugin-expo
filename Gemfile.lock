@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     fastlane_plugin_expo (0.1.0)
-      fastlane
+      fastlane (>= 2.200.0)
 
 GEM
   remote: https://rubygems.org/
